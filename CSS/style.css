@@ -157,7 +157,7 @@ main {
     cursor: pointer;
 }
 
-.btn-search:hover{
+.btn-search:hover {
     transition: 0.1s ease-in;
     background-color: #004ec2;
 }

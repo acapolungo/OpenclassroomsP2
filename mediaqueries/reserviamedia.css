@@ -1,6 +1,6 @@
 
 @media screen and (max-device-width: 375px) {
-
+    /*_________________ Header _________________*/
     header {
         height: 129px;
         width: 375px;
@@ -55,4 +55,56 @@
         background-color: var(--secondary-color);
     }
 
+    /*_________________ search _________________*/
+
+    #search {
+        width: 375px;
+        padding: 0 20px;
     }
+
+    .search-bar::placeholder {
+        font-size: 1.3rem;
+    }
+
+    .filter-container {
+        justify-content: space-between;
+    }
+
+    .filter-container h2 {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .btn-search {
+        display: none;
+    }
+
+    .mobile-search {
+        display: block;
+        width: 51px;
+    }
+
+    .btn-search:hover{
+        transition: 0.1s ease-in;
+        background-color: #004ec2;
+    }
+
+    .filters {
+        margin-left: 0;
+    }
+
+    .filters p {
+        font-size: 1rem;
+    }
+
+    .filters:last-child {
+        margin-bottom: 0;
+    }
+
+    .information {
+        padding-left: 0;
+    }
+    
+    /*_________________ hébergement à _________________*/
+}

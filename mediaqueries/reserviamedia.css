@@ -80,14 +80,9 @@
         display: none;
     }
 
-    .mobile-search {
-        display: block;
+    .mobile-search.fas {
+        display: inline-block;
         width: 51px;
-    }
-
-    .btn-search:hover{
-        transition: 0.1s ease-in;
-        background-color: #004ec2;
     }
 
     .filters {

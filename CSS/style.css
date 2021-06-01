@@ -486,11 +486,16 @@ main {
 
 .two-cards-acti {
     display: flex;
-    justify-content: center;
-    align-content: space-between;
+    flex-direction: column;
+    justify-content: space-between;
+    
     width: min-content;
     flex-wrap: wrap;
     gap: 21.5px;
+}
+
+.above {
+    flex-direction: column-reverse;
 }
 
 .two-cards-acti .card-acti  {

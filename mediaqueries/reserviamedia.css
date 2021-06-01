@@ -124,23 +124,62 @@
         width: 100%;
     }
 
+    .showmore {
+        height: 80px;
+    }
+
     #mostpopular {
         width: 100%;
         height: auto;
         border-radius: 0px;
+        padding-bottom: 37px;
+        
     }
-
-    .title-acco, .title-pop {
-        font-size: 1.4rem;
+    /* Gestion des titres h2 */
+    .title-acco, .title-pop, .title-acti {
         padding: 0 20px;
+        height: 80px;
     }
 
-    .title-acco h2, .title-pop h2 {
+    .title-acco h2, .title-pop h2, .title-acti h2 {
         font-size: 1.4rem;
     }
 
-    .card-pop:nth-child(3) {
-        margin-bottom: 37px;
-    }
+    /*_________________ Activité _________________*/
     
+    .container-acti {
+        justify-content: center;
+        padding:0 20px;
+    }
+
+    .card-acti {
+        width:100%;
+        height: 191px;
+    }
+
+    .card-acti img {
+        height: 135px;
+    }
+
+    .two-cards-acti {
+        width: 100%;
+    }
+
+    .two-cards-acti .card-acti {
+        width: 100%;
+        height: 191px;
+    }
+
+    .two-cards-acti .card-acti img {
+        height: 135px;
+    }
+
+    .card-acti-small {
+        width: 100%;
+        height: 191px;
+    }
+
+    .card-acti-small img {
+        height: 135px;
+    }
 }

@@ -102,4 +102,41 @@
     }
     
     /*_________________ hébergement à _________________*/
+
+    .accommodation-container {
+        height: 100%;
+        flex-direction: column;
+    }
+
+    #accommodation {
+        width: 100%;
+        border-radius: 0px;
+        background: #ffffff;
+        order: 1;
+    }
+
+    .positioning-acco {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .card-acco {
+        width: 100%;
+    }
+
+    #mostpopular {
+        width: 100%;
+        height: auto;
+        border-radius: 0px;
+    }
+
+    .title-acco, .title-pop {
+        font-size: 1.4rem;
+        padding: 0 20px;
+    }
+
+    .title-acco h2, .title-pop h2 {
+        font-size: 1.4rem;
+    }
+    
 }

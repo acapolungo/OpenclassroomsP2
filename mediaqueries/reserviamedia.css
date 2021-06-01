@@ -138,5 +138,9 @@
     .title-acco h2, .title-pop h2 {
         font-size: 1.4rem;
     }
+
+    .card-pop:last-child {gitt
+        margin-bottom: 37px;
+    }
     
 }

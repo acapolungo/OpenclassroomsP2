@@ -234,7 +234,7 @@ main {
     padding-left: 10px;
 }
 
-/* Section hébergement */
+/* Conteneur de section hébergement */
 
 .accommodation-container {
     min-height: 628px;
@@ -353,7 +353,7 @@ main {
     color: var(--secondary-color);
 }
 
-/* Partie Plus populaires */
+/* Plus populaires */
 
 #mostpopular {
     width: 31.5%;
@@ -434,9 +434,9 @@ main {
     margin: 38.5px 0 0 0;
 }
 
-/* Activity */
+/* Activités */
 
-#acivity {
+#activity {
     max-width: 1340px;
 }
 
@@ -445,7 +445,12 @@ main {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 23px;
+    padding-bottom: 60px;
     
+}
+
+.container-acti a {
+    width: 100%;
 }
 
 .title-acti {
@@ -468,7 +473,7 @@ main {
 }
 
 .card-acti h3, .card-acti-small h3 {
-    margin: 3px 0 0 18px;
+    margin: 15px 0 0 18px;
     font-size: 1rem;
 }
 
@@ -517,4 +522,35 @@ main {
     width: 100%;
     height: 109px;
     object-fit: cover;
+}
+
+/* Footer */
+
+footer {
+    max-width: 1340px;
+    background: var(--secondary-color);
+    margin: 0 auto;
+}
+
+.position-footer {
+    max-width: 1020px;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.position-footer h3 {
+    margin-bottom: 10px;
+}
+
+.position-footer ul {
+    list-style-type: none;
+}
+
+.position-footer a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: initial;
+    line-height: 30px;
 }

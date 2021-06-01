@@ -162,10 +162,6 @@
         padding:0 20px;
     }
 
-    .container-acti a {
-        width: 100%;
-    }
-
     .card-acti {
         width:100%;
         height: 191px;
@@ -195,5 +191,11 @@
 
     .card-acti-small img {
         height: 135px;
+    }
+
+    /*_________________ Footer _________________*/
+
+    .position-footer h3 {
+        margin-top: 20px;
     }
 }

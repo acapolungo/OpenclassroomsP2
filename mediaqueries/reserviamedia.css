@@ -195,7 +195,17 @@
 
     /*_________________ Footer _________________*/
 
+    .position-footer {
+        /* vertical | horizontal */
+        padding: 29px 48px; 
+    }
+    
     .position-footer h3 {
-        margin-top: 20px;
+        margin-top: 48px;
+    }
+
+    .above {
+        flex-direction: column;
+        padding-bottom: 48px;
     }
 }

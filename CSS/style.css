@@ -201,7 +201,7 @@ main {
     margin:-2px;
     border-radius: 50%;
     background-color: #deebff;
-    border: 2px solid #deebff;
+    border: 2px solid transparent;
 }
  
 .filters p {

@@ -214,10 +214,10 @@
     }
 }
 
-/*=============== Google Pixel 426px - 767px /*==============*/
+/*=============== Tablette 426px - 768px /*==============*/
 
 @media screen and (min-width: 426px)
-and (max-width: 767px) {
+and (max-width: 768px) {
 
     /* Header */
     header {
@@ -320,7 +320,7 @@ and (max-width: 767px) {
 }
 
 
-/*=============== Tablettes /*==============*/
+/*=============== Laptop /*==============*/
 
 @media screen
   and (min-width: 768px) 

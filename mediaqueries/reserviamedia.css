@@ -10,13 +10,12 @@
         display: flex;
         margin: 0 auto;
         position: relative;
-        padding: 0 20px;
         border: 1px solid pink;
     }
 
     .logo {
         position: static;
-        margin-top: 4git status0px;
+        margin-top: 40px;
     }
 
     .navbar {
@@ -24,7 +23,7 @@
         height: 100%;
         
         display: grid;
-        grid-template-columns:1fr 162px 148px 126px;
+        grid-template-columns:1fr 162px 149px 125px;
         grid-template-rows: 3px 64px;
         align-items: flex-end;
     }
@@ -64,6 +63,10 @@
         grid-column: 4/5;
     }
 
+    .link-sign a {
+        padding: 0;
+    }
+
     .line {
         height: 3px;
         grid-row: 1/2;
@@ -79,10 +82,16 @@
 
     #search {
         max-width: 1340px;
+        padding: 0;
     }
 
-    .search-bar {
+    input.search-bar {
         width: 235px;
+    }
+
+    .btn-search {
+        width: 133px;
+        border-radius: 0 20px 20px 0px;
     }
 
     .desktop-search {
@@ -94,6 +103,7 @@
     }
 
     .filter-container {
+        width: 100%;
         justify-content: flex-start;
     }
 
@@ -140,6 +150,11 @@
     .tadjust {
         height: 90px;
         padding: 0 40px;
+    }
+
+    /* Gestion des a sur les items*/
+    #accommodation a {
+        width:  246px;
     }
 
     .card-acco {
@@ -212,7 +227,7 @@
     }
 
     .two-cards-acti {
-        width: 25%;
+        width: min-content;
         justify-content: space-between;
     }
 
@@ -255,17 +270,17 @@
     /* Footer */
 
     footer {
-        max-width: 1340px;
+        max-width: 1440px;
     }
 
     .position-footer {
-        max-width: 1020px;
+        max-width: 1130px;
         padding: 50px;
     }
 }
 
 
-/*=============== Tablette 426px - 767px /*==============*/
+/*=============== Tablette 425px - 767px /*==============*/
 
 /* @media screen and (min-width: 426px)
 and (max-width: 768px) {
@@ -293,14 +308,11 @@ and (max-width: 768px) {
         margin-bottom: 15px;
     }
 
-
-
     .accommodation-container {
         width: 100%;
         padding: 0 20px;
         flex-wrap: wrap;
     }
-
 
     #accommodation {
         flex: 1 1 100%;
@@ -366,10 +378,10 @@ and (max-width: 768px) {
     .card-acti-long img, .card-acti-small img {
         height: 180px;
     }
-} */
+}
 
 
-/*=============== Tablettes /*==============*/
+/* =============== Tablet ============== */
 
 @media screen
   and (min-width: 768px) 
@@ -378,7 +390,6 @@ and (max-width: 768px) {
     /* Header Tab */
     header {
         width: 100%;
-        padding: 0 20px;
     }
 
     #search {
@@ -386,9 +397,18 @@ and (max-width: 768px) {
         padding: 0 20px;
     }
 
+    input.search-bar {
+        width: 235px;
+    }
+
     .information {
         margin-top: 20px;
     }
+
+    .filter-container {
+        width: 100%;
+    }
+    
 
     .filter-container h2 {
         width: 100%;

@@ -125,21 +125,18 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 51px;
-    height: 51px;
+    min-width: 51px;
     font-size: 1.2rem;
     border-radius: 20px 0 0 20px;
     background-color: var(--secondary-color);
 }
 
 .search-bar {
-    width: 70%;
-    height: 50px;
-    
     border: 1px solid var(--secondary-color);
 }
 
-input.search-bar::placeholder {
+input.search-bar {
+    width: 100%;
     color: initial;
     font-size: 1.2rem;
     padding-left: 10px;
@@ -147,13 +144,14 @@ input.search-bar::placeholder {
 }
 
 .btn-search {
-    width: 134px;
-    height: 50px;
+    margin-left: -15px;
+    min-width: 51px;
+    height: 51px;
     border: none;
     background-color: var(--main-color);
     color: #ffffff;
     font-size: 1rem;
-    border-radius: 0 20px 20px 0;
+    border-radius: 20px;
     font-size: 1.1rem;
     font-weight: 600;
     cursor: pointer;
@@ -175,7 +173,7 @@ input.search-bar::placeholder {
 
 .filter-container {
     margin-top: 32px;
-    width: 100%;
+    width: 50%;
     
     display: flex;
     justify-content: space-between;
@@ -293,22 +291,24 @@ input.search-bar::placeholder {
 .title-acco h2, .title-pop h2, .title-acti h2 {
     font-size: 1.4rem;
 }
-
+/* Gestion des a sur les items*/
 #accommodation a, #mostpopular a, #activity a {
     text-decoration:none;
+    width: 100%;
     color: initial;
 }
 
 .card-acco {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    max-width: 100%;
     height: 200px;
     border-radius: 20px;
     padding: 6px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     background-color: #ffffff;
 }
+
 #accommodation .container-stars {
     margin-top: 5px;
     margin-left: 10px;
@@ -316,7 +316,7 @@ input.search-bar::placeholder {
 
 .container-img-acco {
     align-self: center;
-    max-width: 100%;
+    width: 100%;
     height: 120px;
 }
 
@@ -421,7 +421,7 @@ input.search-bar::placeholder {
 }
 
 .container-img-pop {
-    max-width: 127px;
+    width: 100%;
     height: 100%;
 }
 

@@ -1,10 +1,37 @@
-@media only screen and (min-width : 1025px){
-    /* Styles pour cette Media Queries */
+/*=============== Tablette 425px - 767px /*==============*/
 
-    /* CSS header */
+@media screen and (min-width: 425px)
+and (max-width: 767px)  {
+
+    input.search-bar {
+        width: 265px;
+    }
+
+    .positioning-pop {
+        padding: 0 50px;
+    }
+
+    .positioning-acco {
+        padding: 0 50px;
+    }
+
+    .container-acti {
+        padding: 0 50px;
+    }
+
+    .tadjust {
+        padding: 0 50px
+    }
+
+}
+
+/*=============== Header à partir de 768px /*==============*/
+
+@media only screen and (min-width : 768px) {
 
     header {
-        max-width: 1340px;
+        max-width: 1440px;
+        padding: 0 50px;
         height: 80px;
 
         display: flex;
@@ -71,17 +98,214 @@
         height: 3px;
         grid-row: 1/2;
         grid-column: 2/3;
-        background-color: #0065fc;
     }
 
     .grey {
         display: none;
     }
+}
 
+/* =============== Comportement du main pour Laptop 768px - 1439px ============== */
+
+@media screen
+  and (min-width: 768px) 
+  and (max-width: 1439px) {
+    
+    /* CSS Search */
+    #search {
+        width: 100%;
+        padding: 0 50px;
+    }
+
+    input.search-bar {
+        width: 235px;
+    }
+
+    .mobile-search.fas {
+        display: none;
+    }
+
+    .desktop-search {
+        display: block;
+        border-radius: 0 20px 20px 0;
+        width: 133px;
+    }
+
+    .information {
+        margin-top: 20px;
+    }
+
+    .filter-container {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .filter-container h2 {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .filters:last-child {
+        margin-bottom: 15px;
+    }
+
+    
+    /* Gestion des titres h2 */
+    .tadjust {
+        padding: 0 45px;
+        height: 90px;
+    }
+    
+    .title-acco {
+        padding: 0 45px;
+    }
+    
+    /* Hébergement */
+    
+    .accommodation-container {
+        width: 100%;
+        padding: 0 20px;
+        flex-wrap: wrap;
+    }
+
+    #accommodation a {
+        width: 30%;
+    }
+
+    .positioning-acco {
+        padding: 0 30px;
+        justify-content: space-between;
+    }
+
+    .card-acco {
+        width: 100%;
+        height: 210px;
+        justify-content: space-between;
+    }
+
+    .card-acco h3 {
+        margin-top: 4px;
+    }
+
+    .showmore {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    /* Les Plus populaires */
+
+    #mostpopular {
+        flex: 1 1 100%;
+        padding-bottom: 0;
+        border-radius: 20px;
+    }
+    
+    .positioning-pop {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0 30px 30px;
+    }
+
+    #mostpopular a {
+        width: 30%;
+    }
+    
+    .container-img-pop {
+        height: 100px;
+    }
+    
+    .container-img-pop img {
+        width: 100%;
+        border-radius: 16px 16px 0 0;
+    }
+    
+    .text-side {
+        width: 100%;
+        max-width: 100%;
+        height: 90px;
+        margin-left: 0;
+        padding-left: 10px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .card-pop {
+        height: 200px;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .card-pop h3 {
+        margin-top: 8px;
+    }
+    
+    .card-pop p {
+        width: 100%;
+        margin-top: 3px;
+    }
+    
+    #mostpopular .container-stars {
+        margin: 3px 0;
+        align-self: flex-end;
+    }
+    
+    /* Activité */
+
+    .container-acti {
+        justify-content: space-between;
+        padding: 0 45px;
+    }
+
+    .card-acti {
+        width: 48%;
+        height: 445px;
+    }
+
+    .two-cards-acti {
+        width: 48%;
+        justify-content: space-between;
+    }
+
+    .card-acti-long {
+        height: 234px;
+    }
+
+    .card-acti-long img {
+        height: 176px;
+    }
+
+    .card-acti img {
+        height: 388px;
+    }
+    
+    .switch {
+        order: -1;
+    }
+
+    /* Footer */
+    
+    footer {
+        display: flex;
+        
+    }
+    
+    .position-footer {
+        width: 90%;
+    }
+}
+
+
+/*=============== Desktop à partir de 1440px /*==============*/
+
+@media only screen and (min-width : 1440px){
     /* CSS Search */
 
+    main {
+        max-width: 1440px;
+        padding: 0 50px;
+    }
+
     #search {
-        max-width: 1340px;
         padding: 0;
     }
 
@@ -123,8 +347,6 @@
         padding-left: 5px;
     }
     
-    /* Conteneur Section Hébergement */
-    
     /* Conteneur global */
 
     .accommodation-container {
@@ -132,7 +354,8 @@
         flex-direction: row;
     }
     
-    /* Conteneur droit */
+    /* Conteneur gauche > Section Hébergement */
+
     #accommodation {
         /* Trois valeurs : flex-grow | flex-shrink | flex-basis */
         flex: 0 1 65.6%;
@@ -171,7 +394,6 @@
 
     /* Section Plus populaires */
 
-    /* Conteneur section droite (Plus populaires) */
     #mostpopular {
         flex: 0 1 32%;
         border-radius: 20px;
@@ -194,8 +416,7 @@
     #activity {
         max-width: 1340px;
     }
-
-    /* Conteneur des photos activités */
+    
     .container-acti {
         display: flex;
         justify-content: space-between;
@@ -219,15 +440,14 @@
     }
 
     .two-cards-acti {
-        width: min-content;
+        width: 302px;
         justify-content: space-between;
     }
 
     .card-acti-long {
         display: flex;
         flex-wrap: wrap;
-        width: 304px;
-        min-width: 304px;
+        width: 100%;
         height: 235px;
         border-radius: 20px;
         background-color: #ffffff;
@@ -244,8 +464,7 @@
     .card-acti-small {
         display: flex;
         flex-wrap: wrap;
-        width: 304px;
-        min-width: 304px;
+        width: 100%;
         height: 165px;
         border-radius: 20px;
         background-color: #ffffff;
@@ -268,195 +487,5 @@
     .position-footer {
         max-width: 1130px;
         padding: 50px;
-    }
-}
-
-
-/*=============== Tablette 425px - 767px /*==============*/
-
-@media screen and (min-width: 426px)
-and (max-width: 768px) {
-
-
-}
-
-
-/* =============== Tablette 768 - 1199px ============== */
-
-@media screen
-  and (min-width: 768px) 
-  and (max-width: 1024px) {
-    
-    /* Header Tab */
-    #search {
-        width: 100%;
-        padding: 0 20px;
-    }
-
-    input.search-bar {
-        width: 235px;
-    }
-
-    .information {
-        margin-top: 20px;
-    }
-
-    .filter-container {
-        width: 100%;
-        justify-content: flex-start;
-    }
-
-    .filter-container h2 {
-        width: 100%;
-        margin-bottom: 15px;
-    }
-
-    .filters:last-child {
-        margin-bottom: 15px;
-    }
-
-    /* Section hébergement Tab */
-
-    .accommodation-container {
-        width: 100%;
-        padding: 0 20px;
-        flex-wrap: wrap;
-    }
-
-    /* Gestion des titres h2 */
-    .tadjust {
-    padding: 0 25px;
-    height: 90px;
-    }
-
-    .title-acco {
-    padding: 0;
-    }
-
-    #accommodation a {
-        width: 35%;
-    }
-
-    .positioning-acco {
-        padding: 0;
-    }
-
-
-    .card-acco {
-        width: 100%;
-        height: 210px;
-        justify-content: space-between;
-    }
-
-    .card-acco h3 {
-        margin-top: 4px;
-    }
-
-    .showmore {
-        width: 100%;
-        justify-content: center;
-    }
-    
-    /* Les Plus populaires */
-
-    #mostpopular {
-        flex: 1 1 100%;
-        padding-bottom: 0;
-        border-radius: 20px;
-    }
-    
-    .positioning-pop {
-        flex: 0 1 100%;
-        flex-wrap: nowrap;
-        justify-content: center;
-        padding: 0 20px 30px;
-    }
-    
-    .positioning-pop a {
-        padding: 0;
-    }
-    
-    .container-img-pop {
-        max-width: 100%;
-        height: 100px;
-    }
-    
-    .container-img-pop img {
-        width: 100%;
-        border-radius: 16px 16px 0 0;
-    }
-    
-    .text-side {
-        width: 100%;
-        max-width: 100%;
-        height: 90px;
-        margin-left: 0;
-        padding-left: 10px;
-        display: flex;
-        flex-wrap: wrap;
-    }
-    
-    .card-pop {
-        width: 100%;
-        height: 200px;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    
-    .card-pop h3 {
-        margin-top: 8px;
-    }
-    
-    .card-pop p {
-        width: 100%;
-        margin-top: 3px;
-    }
-    
-    #mostpopular .container-stars {
-        margin: 3px 0;
-        align-self: flex-end;
-    }
-    
-    /* Activité */
-
-    .container-acti {
-        justify-content: space-between;
-    }
-
-    .card-acti {
-        width: 48%;
-        height: 445px;
-    }
-
-    .two-cards-acti {
-        width: 48%;
-        justify-content: space-between;
-    }
-
-    .card-acti-long {
-        height: 234px;
-    }
-
-    .card-acti-long img {
-        height: 176px;
-    }
-
-    .card-acti img {
-        height: 388px;
-    }
-    
-    .switch {
-        order: -1;
-    }
-
-    /* Footer */
-    
-    footer {
-        display: flex;
-        
-    }
-    
-    .position-footer {
-        width: 90%;
     }
 }

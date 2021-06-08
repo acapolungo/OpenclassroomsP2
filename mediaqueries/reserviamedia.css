@@ -1,4 +1,4 @@
-@media only screen and (min-width : 1024px){
+@media only screen and (min-width : 1025px){
     /* Styles pour cette Media Queries */
 
     /* CSS header */
@@ -157,10 +157,6 @@
         width:  246px;
     }
 
-    .card-acco {
-        max-width: 246px;
-    }
-
     .full {
         color: var(--main-color);
     }
@@ -191,10 +187,6 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-    }
-
-    #mostpopular .container-stars {
-        margin: 38.5px 0 0 0;
     }
 
     /* Activités */
@@ -282,116 +274,20 @@
 
 /*=============== Tablette 425px - 767px /*==============*/
 
-/* @media screen and (min-width: 426px)
+@media screen and (min-width: 426px)
 and (max-width: 768px) {
 
-    header {
-        width: 100%;
-        padding: 0 20px;
-    }
 
-    .navbar {
-        grid-template-columns: 1fr 130px 100px 90px;
-    }
-
-    #search {
-        width: 100%;
-        padding: 0 20px;
-    }
-
-    .information {
-        margin-top: 20px;
-    }
-
-    .filter-container h2 {
-        width: 100%;
-        margin-bottom: 15px;
-    }
-
-    .accommodation-container {
-        width: 100%;
-        padding: 0 20px;
-        flex-wrap: wrap;
-    }
-
-    #accommodation {
-        flex: 1 1 100%;
-        margin-top: 30px;
-    }
-
-
-    #mostpopular {
-        flex: 1 1 100%;
-        order: -1;
-    }
-
-    .positioning-pop {
-        padding: 0 40px 30px;
-    }
-
-    .container-img-pop {
-        max-width: 65%;
-    }
-
-    .text-side {
-        width: 100%;
-    }
-
-
-    #activity {
-        padding: 0 20px;
-    }
-
-    .container-acti{
-        width: 100%;
-        justify-content: space-between;
-    }
-
-    .title-acti {
-        align-items: center;
-    }
-
-    .card-acti, .two-cards-acti {
-        width: 100%;
-        height: 235px;
-    }
-
-    .card-acti img {
-        height: 200px;
-    }
-    
-    .card-acti h3 {
-        margin-top: 12px;
-    }
-
-    .two-cards-acti {
-        flex-direction: row;
-        flex-wrap: nowrap;
-    }
-
-    .card-acti-long, .card-acti-small {
-        width: 100%;
-        min-width: 30%;
-        height: 235px;
-    }
-
-    .card-acti-long img, .card-acti-small img {
-        height: 180px;
-    }
 }
 
 
-/* =============== Tablet ============== */
+/* =============== Tablette 768 - 1199px ============== */
 
 @media screen
   and (min-width: 768px) 
   and (max-width: 1024px) {
     
     /* Header Tab */
-    header {
-        width: 100%;
-    }
-
     #search {
         width: 100%;
         padding: 0 20px;
@@ -407,11 +303,15 @@ and (max-width: 768px) {
 
     .filter-container {
         width: 100%;
+        justify-content: flex-start;
     }
-    
 
     .filter-container h2 {
         width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .filters:last-child {
         margin-bottom: 15px;
     }
 
@@ -423,20 +323,27 @@ and (max-width: 768px) {
         flex-wrap: wrap;
     }
 
-    #accommodation {
-        flex: 1 1 100%;
-        margin-top: 30px;
+    /* Gestion des titres h2 */
+    .tadjust {
+    padding: 0 25px;
+    height: 90px;
+    }
+
+    .title-acco {
+    padding: 0;
+    }
+
+    #accommodation a {
+        width: 35%;
     }
 
     .positioning-acco {
-        gap: 30px;
-        justify-content: space-between;
-        padding: 0 20px;
+        padding: 0;
     }
 
+
     .card-acco {
-        width: 208px;
-        min-width: 208px;
+        width: 100%;
         height: 210px;
         justify-content: space-between;
     }
@@ -447,43 +354,28 @@ and (max-width: 768px) {
 
     .showmore {
         width: 100%;
-    }
-
-    /* Les plus populaires Tab */
-
-    #activity {
-        padding:0 20px;
-    }
-
-    .card-acti, .two-cards-acti {
-        width: 48%;
-    }
-
-    .switch {
-        order:-1;
-    }
-
-    .card-acti-small, .card-acti-long {
-        width: 100%;
+        justify-content: center;
     }
     
-    /* Section Plus populaires Tab */
+    /* Les Plus populaires */
+
     #mostpopular {
         flex: 1 1 100%;
-        order: -1;
+        padding-bottom: 0;
+        border-radius: 20px;
     }
-
+    
     .positioning-pop {
         flex: 0 1 100%;
         flex-wrap: nowrap;
         justify-content: center;
         padding: 0 20px 30px;
     }
-
+    
     .positioning-pop a {
         padding: 0;
     }
-
+    
     .container-img-pop {
         max-width: 100%;
         height: 100px;
@@ -500,7 +392,6 @@ and (max-width: 768px) {
         height: 90px;
         margin-left: 0;
         padding-left: 10px;
-
         display: flex;
         flex-wrap: wrap;
     }
@@ -525,21 +416,47 @@ and (max-width: 768px) {
         margin: 3px 0;
         align-self: flex-end;
     }
-
-    /* Activité à Marseille Tab */
-
-
     
+    /* Activité */
 
-    /* Footer */
-
-    footer {
-        display: flex;
-        justify-content: center;
-        
+    .container-acti {
+        justify-content: space-between;
     }
 
+    .card-acti {
+        width: 48%;
+        height: 445px;
+    }
+
+    .two-cards-acti {
+        width: 48%;
+        justify-content: space-between;
+    }
+
+    .card-acti-long {
+        height: 234px;
+    }
+
+    .card-acti-long img {
+        height: 176px;
+    }
+
+    .card-acti img {
+        height: 388px;
+    }
+    
+    .switch {
+        order: -1;
+    }
+
+    /* Footer */
+    
+    footer {
+        display: flex;
+        
+    }
+    
     .position-footer {
-        width: 100%;
+        width: 90%;
     }
 }

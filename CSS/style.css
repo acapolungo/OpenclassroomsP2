@@ -14,7 +14,7 @@ body {
     background-color: #ffffff;
 }
 
-/* CSS header */
+/* Section 1 Navigation*/
 
 header {
     width: 100%;
@@ -51,35 +51,42 @@ header {
     color: #000000;
     text-decoration: none;
     color: var(--main-color);
+    transition: all 0.2s ease-in-out;
 }
 
 .list-item {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 45px;
 }
 
-.link-accom {
+.list-item:not(:last-child):hover {
+    background: rgba(0, 101, 252, 0.1) ;
+    border-bottom: 1px solid var(--main-color);
+}
+
+.list-item-accom {
     grid-row: 2/3;
     grid-column: 1/2;
 }
 
-.link-activ {
+.list-item-activ {
     grid-row: 2/3;
     grid-column: 2/3;
 }
 
-.link-activ a {
+.list-item-activ a {
     color: initial;
     grid-row: 2/2 ;
     grid-column: 3/4;
 }
-.link-sign {
+.list-item-sign {
     grid-row: 1/2;
     grid-column: 2/3;
 }
 
-.link-sign a {
+.list-item-sign a {
     font-weight: 800;
     padding-left: 50px;
     padding-top: 15px;
@@ -104,7 +111,7 @@ main {
     margin: 50px auto 0;
 }
 
-/* CSS Search */
+/* Section 2 Partie recherche */
 
 #search {
     width: 100%;
@@ -163,7 +170,8 @@ input.search-bar {
 
 .btn-search:hover {
     transition: 0.1s ease-in;
-    background-color: #004ec2;
+    background-color: #f2f2f2;
+    color: var(--main-color);
 }
 
 .mobile-search.fas {
@@ -262,15 +270,15 @@ input.search-bar {
     padding-left: 10px;
 }
 
-/* Section Hébergement */
+/* Section 3 hébergement */
+
 .accommodation-container {
     width: 100%;
     min-width: 320px;
     margin-top: 37px;
     display: flex;
     flex-direction: column-reverse;
-    justify-content: space-between;
-    border: 1px solid blue;
+    justify-content: space-between;;
 }
 
 #accommodation {
@@ -302,7 +310,7 @@ input.search-bar {
     font-size: 1.4rem;
 }
 
-/* Gestion des a sur les items*/
+/* Gestion des lien a */
 #accommodation a, #mostpopular a, #activity a {
     text-decoration:none;
     width: 100%;
@@ -385,9 +393,8 @@ input.search-bar {
     height: 80px;
 }
 
-/* Section Plus populaires */
+/* Section hébergement > menu populaire */
 
-/* Conteneur section droite (Plus populaires) */
 #mostpopular {
     width: 100%;
     border-radius: 0px;
@@ -472,7 +479,8 @@ a:nth-child(2) .container-stars {
     width: 100%;
 }
 
-/* Conteneur des photos activités */
+/* Section Activités */
+
 .container-acti {
     display: flex;
     flex-wrap: wrap;
@@ -519,10 +527,6 @@ a:nth-child(2) .container-stars {
     flex-wrap: wrap;
     gap: 21.5px;
 }
-
-/* .above {
-    flex-direction: column-reverse;
-} */
 
 .card-acti-long {
     display: flex;

@@ -86,7 +86,7 @@ and (max-width: 767px)  {
     }
 }
 
-/* =============== Comportement du main pour Laptop 768px - 1439px ============== */
+/* =============== Comportement du main pour Tablette 768px - 1439px ============== */
 
 @media screen
   and (min-width: 768px) 

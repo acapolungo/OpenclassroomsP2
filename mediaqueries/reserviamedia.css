@@ -1,4 +1,4 @@
-/*=============== Tablette 425px - 767px /*==============*/
+/*=============== Ecran intermédiaires 425px - 767px /*==============*/
 
 @media screen and (min-width: 425px)
 and (max-width: 767px)  {
@@ -12,7 +12,7 @@ and (max-width: 767px)  {
     }
 }
 
-/*=============== Header à partir de 768px /*==============*/
+/*=============== Media du Header à partir de 768px /*==============*/
 
 @media only screen and (min-width : 768px) {
 
@@ -44,11 +44,6 @@ and (max-width: 767px)  {
         color:initial;
         text-decoration: none;
         color: var(--main-color);
-    }
-    
-    .list {
-        display: flex;
-        justify-content: center;
     }
 
     .list-accom {
@@ -185,7 +180,6 @@ and (max-width: 767px)  {
     }
     
     .mostpop-link {
-        flex-wrap: wrap;
         justify-content: space-between;
         padding: 0 30px 30px;
     }
@@ -346,7 +340,6 @@ and (max-width: 767px)  {
     /* Conteneur global */
 
     .accommodation-container {
-        min-height: 628px;
         flex-direction: row;
     }
     
@@ -361,7 +354,6 @@ and (max-width: 767px)  {
     }
 
     .accommodation-link {
-        max-width: 800px;
         padding: 0;
     }
 

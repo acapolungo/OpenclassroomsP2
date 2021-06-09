@@ -14,14 +14,12 @@ body {
     background-color: #ffffff;
 }
 
-/* Section 1 Navigation*/
+/* Navigation*/
 
 header {
     width: 100%;
     min-width: 320px;
     height: 129px;
-
-    display: flex;
     margin: 0 auto;
     position: relative;
     /* border: 1px solid pink; */
@@ -106,12 +104,13 @@ header {
     background-color: var(--secondary-color);
 }
 
+
+/* Section 1 Partie recherche */
+
 main {
     max-width: 1340px;
     margin: 50px auto 0;
 }
-
-/* Section 2 Partie recherche */
 
 #search {
     width: 100%;
@@ -270,7 +269,7 @@ input.search-bar {
     padding-left: 10px;
 }
 
-/* Section 3 hébergement */
+/* Section 2 hébergement */
 
 .accommodation-container {
     width: 100%;
@@ -289,7 +288,6 @@ input.search-bar {
 
 .accommodation-link {
     width: 100%;
-    margin: 0 auto;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -321,8 +319,6 @@ input.search-bar {
 #accommodation a:hover, #mostpopular a:hover, #activity a:hover {
     transform: scale(1.03);
 }
-
-
 
 .accommodation-cards {
     display: flex;
@@ -486,7 +482,7 @@ a:nth-child(2) .contstars {
     width: 100%;
 }
 
-/* Section Activités */
+/* Section 3 Activités */
 
 .activity-link {
     display: flex;

@@ -19,7 +19,11 @@ L'objectif est d'intégrer la maquette du site Reservia
 - Les images doivent être de taille adéquate afin qu'elle soit le plus jolie possible en impactant le moins possible le temps de chargement de la page.
 - [Le code devra utiliser les balises sémantiques et ne doit contenir aucune erreur ni alerte au validateur W3C HTML et CSS.]
 
+Validator HTML
+https://validator.w3.org/nu/?doc=https%3A%2F%2Facapolungo.github.io%2Fadriencapolungo_2_27052021%2F
 
+Validator CSS
+https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Facapolungo.github.io%2Fadriencapolungo_2_27052021%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=fr
 
 - Le site devra être compatible avec les dernières versions de Chrome et Firefox.
 - Le HTML et le CSS doivent être séparés et le dossier doit être organisé

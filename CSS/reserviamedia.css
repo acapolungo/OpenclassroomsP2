@@ -86,8 +86,7 @@ and (max-width: 767px)  {
     .list-accom:hover, .list-activ:hover, .list-sign:hover {
         border-top: 4px solid var(--main-color);
         padding-bottom: 5px;
-        background:linear-gradient( #ffffff, var(--secondary-color));
-        
+        background:linear-gradient( #ffffff, #f2f2f2);
     }
 
     .list-activ:hover.list-activ a {
@@ -368,7 +367,7 @@ and (max-width: 767px)  {
         width: 65%;
         height: auto;
         border-radius: 20px;
-        padding: 0 20;
+        padding: 0 20px;
         background-color: var(--secondary-color);
     }
 

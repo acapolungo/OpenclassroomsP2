@@ -30,4 +30,4 @@ L'objectif est d'intégrer la maquette du site Reservia
 
 
 ## Contact
-(mailto:ad_cap@hotmail.com)
+(mailto: ad_cap@hotmail.com)

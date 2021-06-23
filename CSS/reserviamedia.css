@@ -345,6 +345,10 @@ and (max-width: 768px)  {
         font-size: 0.9rem;
     }
 
+    .filters:last-child {
+        margin-bottom: 0;
+    }
+
     .information {
         padding-left: 5px;
     }

@@ -1,7 +1,7 @@
-/*=============== Ecran intermédiaires 425px - 767px /*==============*/
+/*=============== Ecran intermédiaires 425px - 768px /*==============*/
 
 @media screen and (min-width: 425px)
-and (max-width: 767px)  {
+and (max-width: 768px)  {
 
     input.search-bar {
         width: 265px;
@@ -96,14 +96,9 @@ and (max-width: 767px)  {
 
 /* =============== Tablette 768px - 1024px ============== */
 
-@media screen
+@media only screen
   and (min-width: 768px)
   and (max-width: 1024px) {
-
-    .list-sign:hover {
-        background: rgba(0, 101, 252, 0.1) ;
-        border-bottom: 1px solid var(--main-color);
-    }
 
     #search {
         width: 100%;
@@ -242,8 +237,6 @@ and (max-width: 767px)  {
 
     /* Activités */
 
-
-
     #activity a {
         width: 100%;
     }
@@ -271,7 +264,7 @@ and (max-width: 767px)  {
     }
 
     #activity .activity-card-two a {
-        width: auto;
+        width: 100%;
     }
 
     .activity-card-two--long {
@@ -306,6 +299,7 @@ and (max-width: 767px)  {
         padding: 0 25px;
 
     }
+
     /* CSS Search */
 
     main {
